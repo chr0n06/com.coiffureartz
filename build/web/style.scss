@@ -1,11 +1,22 @@
 //Command Line in console : sass --watch style.scss:style.css
 
 
-
 header{
     .container{
         margin: 0 auto;
         width: 100%;
+        p{
+   
+            box-shadow: 0 2px 1px rgba(0,0,0,.2);
+            color: white;
+            display: block;
+            font-weight: bold;
+            margin-bottom: 20px;
+            padding: 15px 0;
+            text-align: center;
+            width: 30%;
+            
+        }
         a{     
             background-color: black;
             box-shadow: 0 2px 1px rgba(0,0,0,.2);
@@ -18,10 +29,11 @@ header{
             text-decoration: none;
             text-transform: uppercase;
             width: 30%;
-            cursor: auto;
+   
             &:hover{
                 color: #fff;
                 box-shadow: 0 2px 1px rgba(0,0,0,.5);
+                cursor: pointer;
             }
             .bloc{
                 margin-top: 100px;
@@ -41,7 +53,7 @@ header{
     overflow: hidden;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-
+    cursor: grab;
     position: relative;
     -webkit-transition: color 300ms;
     transition: color 300ms;
@@ -148,11 +160,17 @@ $image : "./Assets/images/wall4.jpg";
 * { box-sizing: border-box; margin: 0; padding: 0; border: 0; }
 
 main {
- 
+
     max-height: 100%;
     perspective: 1px;
     perspective-origin: center top;
     transform-style: preserve-3d;
+    background-color: rgb(220, 227, 226);
+    border: black;
+    border-style: solid;
+    border-left: none;
+        border-right: none;
+    
 }
 
 header {
@@ -377,6 +395,7 @@ figure.snip1477 .title div:after {
     transform: translateY(-100%);
 }
 figure.snip1477 h2,
+figure.snip1477 h3,
 figure.snip1477 h4 {
     margin: 0;
     text-transform: uppercase;
@@ -509,25 +528,3 @@ figure.snip1477.hover figcaption {
 #myFooter .fa-facebook:focus{
     color: #2b55ff; 
 }
-
-#myFooter .fa-google-plus:hover{
-    color:red;
-}
-
-#myFooter .fa-google-plus:focus{
-    color:red;
-}
-
-#myFooter .fa-twitter:hover{
-    color: #00aced;
-
-}
-
-#myFooter .fa-twitter:focus{
-    color:#00aced;
-}
-
-
-
-/* CSS used for positioning the footers at the bottom of the page. */
-/* You can remove this. */
