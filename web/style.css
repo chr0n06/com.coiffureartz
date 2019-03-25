@@ -159,6 +159,13 @@ main {
   border-left: none;
   border-right: none;
 }
+main .testimonial {
+  padding-top: 50px;
+}
+main .testimonial p {
+  font-family: "Permanent Marker", cursive;
+  font-size: 2em;
+}
 
 header {
   height: 50vh;
