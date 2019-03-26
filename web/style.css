@@ -1,7 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
 @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,500,700,800,900,500italic,400italic,100italic,900italic,300italic,700italic,800italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600;);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+body {
+  z-index: 1;
+}
+
 header .container {
   margin: 0 auto;
   width: 100%;
@@ -37,6 +42,27 @@ header .container a:hover {
 header .container a .bloc {
   margin-top: 100px;
   width: 70%;
+}
+
+.overlayBox {
+  visibility: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 650px;
+  height: auto;
+  text-align: center;
+  margin-left: -325px;
+  margin-top: -200px;
+  padding-top: 25px;
+  padding-right: 10px;
+  padding-bottom: 25px;
+  padding-left: 10px;
+  background-color: white;
+  border: black;
+  border-style: solid;
+  border-radius: 10px;
+  z-index: 100;
 }
 
 .fade {
@@ -149,22 +175,24 @@ header .container a .bloc {
 }
 
 main {
-  max-height: 100%;
-  perspective: 1px;
-  perspective-origin: center top;
-  transform-style: preserve-3d;
   background-color: #dce3e2;
   border: black;
   border-style: solid;
+  border-bottom: none;
   border-left: none;
   border-right: none;
 }
 main .testimonial {
   padding-top: 50px;
+  background-color: white;
 }
 main .testimonial p {
   font-family: "Permanent Marker", cursive;
   font-size: 2em;
+}
+main .testimonial p .signature {
+  text-align: right;
+  font-size: 1em;
 }
 
 header {

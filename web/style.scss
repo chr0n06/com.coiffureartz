@@ -1,12 +1,15 @@
 //Command Line in console : sass --watch style.scss:style.css
 
-
+//mount
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+body{
+    z-index: 1;
+}
 header{
     .container{
         margin: 0 auto;
         width: 100%;
         p{
-
             box-shadow: 0 2px 1px rgba(0,0,0,.2);
             color: white;
             display: block;
@@ -42,6 +45,30 @@ header{
         }
     } 
 }
+
+.overlayBox{
+    visibility: hidden;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    width: 650px;
+    height: auto;
+    text-align: center;
+    margin-left: -325px;
+    margin-top: -200px;
+    padding-top: 25px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    background-color: white;
+    border: black;
+    border-style: solid;
+    border-radius: 10px;
+    z-index: 100;
+  
+
+}
+
 .fade{
     transition: background-color 1000ms;
     &:hover{
@@ -160,22 +187,26 @@ $image : "./Assets/images/wall4.jpg";
 * { box-sizing: border-box; margin: 0; padding: 0; border: 0; }
 
 main {
-    max-height: 100%;
-    perspective: 1px;
-    perspective-origin: center top;
-    transform-style: preserve-3d;
     background-color: rgb(220, 227, 226);
     border: black;
     border-style: solid;
+    border-bottom: none;
     border-left: none;
     border-right: none;
 
     .testimonial{
         padding-top:50px;
-            p{
-                font-family: 'Permanent Marker', cursive;
-                font-size: 2em;
+        background-color: white;
+        p{
+            font-family: 'Permanent Marker', cursive;
+            font-size: 2em;
+
+            .signature{
+                text-align: right;
+                font-size: 1em;
             }
+        }
+
     }
 }
 
@@ -325,6 +356,8 @@ a {
 
 
 //mount3
+
+
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 figure.snip1477 {
