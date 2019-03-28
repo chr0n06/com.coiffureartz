@@ -8,6 +8,9 @@ package com.coiffureartz.managedbeans;
 import com.coiffureartz.model.BusinessPhoneNumber;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
+import javax.swing.JEditorPane;
+import javax.swing.text.html.HTML;
+import org.apache.taglibs.standard.tag.el.xml.ParseTag;
 
 /**
  *
@@ -30,14 +33,14 @@ public class MainPageManagedBean {
         String result = "";
 
         if (isNotConfidential) {
-            result = "<li>"
-                    + "<a href=\""+this.businessPhoneNumber.getPhoneNumberReference()+"\">" 
+            result = "<h1>Test</h1>";
+            /*result = "<li>"
+                    + "<a href=\"" + this.businessPhoneNumber.getPhoneNumberReference() + "\">"
                     + this.businessPhoneNumber.getPhoneNumberSymbol() + "; "
-                    + this.businessPhoneNumber.getPhoneNumberText() 
+                    + this.businessPhoneNumber.getPhoneNumberText()
                     + "</a>"
                     + "</li>";
-        } else {
-            return result;
+*/
         }
         return result;
     }

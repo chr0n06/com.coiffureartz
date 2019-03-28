@@ -37,8 +37,7 @@ and open the template in the editor.
                     <p:selectOneRadio id="console" value="#{radioView.console}" >
                         <div class="col-sm">
                             <f:selectItem itemLabel="Homme" itemValue="Homme" />
-                        </div>
-                        <div class="col-sm">
+                       
                             <f:selectItem itemLabel="Femme" itemValue="Femme" />
                         </div>
                     </p:selectOneRadio>
@@ -237,8 +236,8 @@ and open the template in the editor.
                 <div class="container">
                     <ul>
                         <li><a href="">Coiffure-Artz</a></li>
-                        #{MainPage.showPhoneInfoManager(true)}
-                        
+                            #{MainPage.showPhoneInfoManager(true)}
+
                         <!--<li><a href="tel:5142667727">&#9743; (514) 266-7727</a></li>-->
                         <li><a href="mailto:cynthia.pronovost@gmail.com">&#9993; cynthia.pronovost@gmail.com</a></li>
                     </ul>
@@ -267,11 +266,14 @@ and open the template in the editor.
                                 var content = document.getElementsByClassName("content")[0];
                                 var registerZone = document.getElementsByClassName("overlayBox")[0];
 
+
                                 if (registerZone.style.visibility === "hidden") {
+                                    //alert("Dans if");
                                     registerZone.style.visibility = "visible";
                                     content.style.opacity = "0.1";
 
                                 } else {
+                                    //alert("Dans else");
                                     registerZone.style.visibility = "hidden";
                                     content.style.opacity = "1";
                                 }
