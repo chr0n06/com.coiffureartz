@@ -8,7 +8,8 @@ and open the template in the editor.
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:p="http://primefaces.org/ui">
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
     <h:head>
         <title>Coiffure-Artz</title>
         <meta charset="UTF-8"></meta>
@@ -37,7 +38,7 @@ and open the template in the editor.
                     <p:selectOneRadio id="console" value="#{radioView.console}" >
                         <div class="col-sm">
                             <f:selectItem itemLabel="Homme" itemValue="Homme" />
-                       
+
                             <f:selectItem itemLabel="Femme" itemValue="Femme" />
                         </div>
                     </p:selectOneRadio>
@@ -130,41 +131,33 @@ and open the template in the editor.
 
                 </div>
 
+
+
+
+
+
+
+
                 <main>
                     <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
-                        </ol>
                         <div class="carousel-inner">
-
-                            <div class="carousel-item active">
-                                <div class="d-block w-100">
-                                    <div class="testimonial">
-                                        <p>"Je suis très satisfaite de mes mèches elles sont magnifiques"</p>
-                                        <p class="signature">-Mélanie D.-</p>
+                            <c:forEach var="x" items="#{MainPage.allTestimonials}">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators2" data-slide-to="#{x.ID+1}"></li>
+                                </ol>
+                                <c:set var = "isActive" value = "${'carousel-item'}"/>
+                                <c:if test="#{x.ID == 0}">  
+                                    <c:set var = "isActive" value = "${'carousel-item active'}"/>
+                                </c:if>
+                                <div class="${isActive}">
+                                    <div class="d-block w-100">
+                                        <div class="testimonial">
+                                            <p>${x.message}</p>
+                                            <p>${x.signature}</p>
+                                        </div>
                                     </div>
                                 </div>
-
-                            </div>
-                            <div class="carousel-item">
-                                <div class="d-block w-100">
-                                    <div class="testimonial">
-                                        <p>"Les prix sont plus que raisonable et le service de qualité!!!"</p>
-                                        <p class="signature">-Sylvie S.-</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="d-block w-100">
-                                    <div class="testimonial">
-                                        <p>"Je recommande Cynthia All the way pour une coupe sans pareil"</p>
-                                        <p class="signature">-Joyce P.-</p>
-                                    </div>
-                                </div>
-                            </div>
+                            </c:forEach>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>

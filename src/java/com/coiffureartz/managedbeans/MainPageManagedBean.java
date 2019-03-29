@@ -5,7 +5,10 @@
  */
 package com.coiffureartz.managedbeans;
 
+import com.coiffureartz.DAL.Repository;
 import com.coiffureartz.model.BusinessPhoneNumber;
+import com.coiffureartz.model.Testimonial;
+import java.util.List;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import javax.swing.JEditorPane;
@@ -22,11 +25,16 @@ public class MainPageManagedBean {
 
     BusinessPhoneNumber businessPhoneNumber = new BusinessPhoneNumber();
 
+    Repository repository = Repository.getInstance();
     /**
      * Creates a new instance of MainPageManagedBean
      */
     public MainPageManagedBean() {
 
+    }
+
+    public List<Testimonial> getAllTestimonials() {
+        return repository.getTestimonials();
     }
 
     public String showPhoneInfoManager(boolean isNotConfidential) {
@@ -40,7 +48,7 @@ public class MainPageManagedBean {
                     + this.businessPhoneNumber.getPhoneNumberText()
                     + "</a>"
                     + "</li>";
-*/
+             */
         }
         return result;
     }
