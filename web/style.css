@@ -1,8 +1,8 @@
-@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
-@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,500,700,800,900,500italic,400italic,100italic,900italic,300italic,700italic,800italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600;);
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,500,700,800,900,500italic,400italic,100italic,900italic,300italic,700italic,800italic);
 body {
   z-index: 1;
 }
@@ -184,14 +184,19 @@ main {
 }
 main .testimonial {
   padding-top: 50px;
-  background-color: white;
+  text-align: center;
 }
 main .testimonial p {
   font-family: "Permanent Marker", cursive;
   font-size: 2em;
 }
-main .testimonial p .signature {
+main .signature {
+  padding-top: 50px;
   text-align: right;
+  background-color: #dce3e2;
+}
+main .signature p {
+  font-family: "Permanent Marker", cursive;
   font-size: 1em;
 }
 

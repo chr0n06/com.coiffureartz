@@ -1,7 +1,15 @@
-//Command Line in console : sass --watch style.scss:style.css
+//Command Line in console : 
+//sass --watch style.scss:style.css variables.scss:variables.css
 
-//mount
+//Import section
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600;);
 @import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,500,700,800,900,500italic,400italic,100italic,900italic,300italic,700italic,800italic);
+@import "variables";
+
+
 body{
     z-index: 1;
 }
@@ -65,9 +73,6 @@ header{
     border-style: solid;
     border-radius: 10px;
     z-index: 100;
-
-
-
 }
 
 .fade{
@@ -179,11 +184,6 @@ header{
 
 $scroll-factor : .5;
 
-$background: #B5B8BD;
-$header-height : 0px;
-$image : "./Assets/images/wall4.jpg";
-
-@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,500,700,800,900,500italic,400italic,100italic,900italic,300italic,700italic,800italic);
 
 * { box-sizing: border-box; margin: 0; padding: 0; border: 0; }
 
@@ -197,17 +197,20 @@ main {
 
     .testimonial{
         padding-top:50px;
-        background-color: white;
+        text-align: center;
         p{
             font-family: 'Permanent Marker', cursive;
             font-size: 2em;
-
-            .signature{
-                text-align: right;
-                font-size: 1em;
-            }
         }
-
+    }
+    .signature{
+        padding-top: 50px;
+        text-align: right;
+        background-color: rgb(220, 227, 226);
+        p{
+            font-family: 'Permanent Marker', cursive;
+            font-size: 1em;
+        }
     }
 }
 
@@ -240,7 +243,7 @@ a {
 
 
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:600;);
+
 .snip1573 {
     background-color: #000;
     display: inline-block;
@@ -354,13 +357,6 @@ a {
 
 
 
-
-
-//mount3
-
-
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
-@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 figure.snip1477 {
     font-family: 'Raleway', Arial, sans-serif;
     position: relative;
@@ -503,10 +499,6 @@ figure.snip1477.hover figcaption {
     transition-delay: 0.2s;
 }
 
-
-
-
-
 #myFooter{
     padding-top:32px;
 }
@@ -562,9 +554,9 @@ figure.snip1477.hover figcaption {
 }
 
 #myFooter .fa-facebook:hover{
-    color: #2b55ff;
+    color: $facebookLinkColor;
 }
 
 #myFooter .fa-facebook:focus{
-    color: #2b55ff; 
+    color: $facebookLinkColor; 
 }
