@@ -142,9 +142,6 @@ and open the template in the editor.
                     <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <c:forEach var="x" items="#{MainPage.allTestimonials}">
-                                <ol class="carousel-indicators">
-                                    <li data-target="#carouselExampleIndicators2" data-slide-to="#{x.ID+1}"></li>
-                                </ol>
                                 <c:set var = "isActive" value = "${'carousel-item'}"/>
                                 <c:if test="#{x.ID == 0}">  
                                     <c:set var = "isActive" value = "${'carousel-item active'}"/>

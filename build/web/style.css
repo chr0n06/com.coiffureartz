@@ -181,9 +181,9 @@ main {
   border-bottom: none;
   border-left: none;
   border-right: none;
+  padding-top: 50px;
 }
 main .testimonial {
-  padding-top: 50px;
   text-align: center;
 }
 main .testimonial p {
@@ -191,13 +191,12 @@ main .testimonial p {
   font-size: 2em;
 }
 main .signature {
-  padding-top: 50px;
   text-align: right;
-  background-color: #dce3e2;
+  margin-right: 10%;
 }
 main .signature p {
   font-family: "Permanent Marker", cursive;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 header {

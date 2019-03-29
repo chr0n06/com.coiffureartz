@@ -194,9 +194,8 @@ main {
     border-bottom: none;
     border-left: none;
     border-right: none;
-
+    padding-top:50px;
     .testimonial{
-        padding-top:50px;
         text-align: center;
         p{
             font-family: 'Permanent Marker', cursive;
@@ -204,12 +203,11 @@ main {
         }
     }
     .signature{
-        padding-top: 50px;
-        text-align: right;
-        background-color: rgb(220, 227, 226);
+        text-align : right;
+        margin-right :10%;
         p{
             font-family: 'Permanent Marker', cursive;
-            font-size: 1em;
+            font-size: 1.5em;
         }
     }
 }
