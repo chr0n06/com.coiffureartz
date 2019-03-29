@@ -22,7 +22,8 @@ and open the template in the editor.
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css" type="text/css"></link>
     </h:head>
-    <!--Overlay for register user-->
+
+    <!--Overlay Register-->
     <div class="overlayBox">
         <h2>Register zone</h2>
         <h:form>
@@ -76,62 +77,30 @@ and open the template in the editor.
             <header>
                 <div class="container">
                     <img src="./Assets/images/CALogo1.png" alt="sample38" style="max-width: 60%; height:auto; margin-top: 100px;"/>
-
                     <a href="#" onclick="myFunction()" class="radial-out">S'inscrire</a>
                     <!--<a href="#" class="sweep-to-left">Se connecter</a>      
                 <p:inputText placeholder="username"></p:inputText>
                     -->
                 </div>
-
-
-
             </header>
-
-
 
             <main>
                 <div class="container">
-                    <figure class="snip1477"><img src="./Assets/images/coiffure.jpg" alt="sample35" />
-                        <div class="title">
-                            <div>
-                                <h3>Coiffure</h3>
-                                <h4>Mèches/teinture</h4>
+                    <c:forEach var="x" items="#{MainPage.allServiceCards}">
+                        <figure class="snip1477"><img src="#{x.imagePath}" alt="sample35" />
+                            <div class="title">
+                                <div>
+                                    <h3>#{x.title}</h3>
+                                    <h4>#{x.subTitle}</h4>
+                                </div>
                             </div>
-                        </div>
-                        <figcaption>
-                            <p>The only skills I have the patience to learn are those that have no real application in life. </p>
-                        </figcaption>
-                    </figure>
-
-                    <figure class="snip1477">
-                        <img src="./Assets/images/ServiceCard_Microblading.jpg" alt="sample38" />
-                        <div class="title">
-                            <div>
-                                <h3>Extension de cils</h3>
-                                <h4>Microblading</h4>
-                            </div>
-                        </div>
-                        <figcaption>
-                            <p>Pour un regard qui ne laissera personne indifférent !</p>
-                        </figcaption>
-                    </figure>
-
-                    <figure class="snip1477">
-                        <img src="./Assets/images/coiffure.jpg" alt="sample38" />
-                        <div class="title">
-                            <div>
-                                <h3>Soins Dentaire</h3>
-                                <h4>Blanchiement</h4>
-                            </div>
-                        </div>
-                        <figcaption>
-                            <p>Offrez vous un sourire éclatant et souriez à la vie ! </p>
-                        </figcaption>       
-                    </figure>
-
+                            <figcaption>
+                                <p>#{x.description}</p>
+                            </figcaption>
+                        </figure>
+                    </c:forEach>
                 </div>
             </main>
-
 
             <!--Testimonial Section-->
             <div id="testimonial">
@@ -165,10 +134,7 @@ and open the template in the editor.
                 </div>
             </div>
 
-
-
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -194,9 +160,6 @@ and open the template in the editor.
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-
-
-
 
             <footer id="myFooter">
                 <div class="container">
@@ -244,8 +207,6 @@ and open the template in the editor.
                                     content.style.opacity = "1";
                                 }
                             }
-
-
         </script>
     </h:body>
 </html>

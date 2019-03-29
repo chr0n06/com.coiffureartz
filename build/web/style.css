@@ -179,7 +179,8 @@ main {
   border-style: solid;
   border-left: none;
   border-right: none;
-  padding-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: black;
 }
 
@@ -189,7 +190,8 @@ main {
   border-style: solid;
   border-left: none;
   border-right: none;
-  padding-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-top: none;
 }
 #testimonial .message {

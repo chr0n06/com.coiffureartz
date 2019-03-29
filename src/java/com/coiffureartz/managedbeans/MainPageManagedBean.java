@@ -7,6 +7,7 @@ package com.coiffureartz.managedbeans;
 
 import com.coiffureartz.DAL.Repository;
 import com.coiffureartz.model.BusinessPhoneNumber;
+import com.coiffureartz.model.ServiceCard;
 import com.coiffureartz.model.Testimonial;
 import java.util.List;
 import javax.faces.bean.ManagedBean;
@@ -33,6 +34,10 @@ public class MainPageManagedBean {
 
     }
 
+    public List<ServiceCard> getAllServiceCards() {
+        return repository.getServiceCard();
+    }
+    
     public List<Testimonial> getAllTestimonials() {
         return repository.getTestimonials();
     }
