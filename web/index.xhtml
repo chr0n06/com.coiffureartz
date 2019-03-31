@@ -209,7 +209,7 @@ and open the template in the editor.
                     <ul>
                         <c:forEach var="x" items="#{MainPage.allBrandingProducts}">
                             <div class="box-item">
-                                <li><a href=""> <img class="d-block w-100" src="#{x.imagePath}" alt="First slide"></img></a></li>
+                                <li><a href="#{x.URI}"> <img class="d-block w-100" src="#{x.imagePath}" alt="First slide"></img></a></li>
                             </div>
                         </c:forEach>
                     </ul>

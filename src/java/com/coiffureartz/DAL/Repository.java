@@ -75,15 +75,35 @@ public class Repository {
     }
 
     private void populateBrandingProducts() {
-        this.brandingProducts.add(new BrandingProduct(0, "./Assets/images/branding/Wella.png"));
-        this.brandingProducts.add(new BrandingProduct(1, "./Assets/images/branding/FaroukChi.png"));
-        this.brandingProducts.add(new BrandingProduct(2, "./Assets/images/branding/LorealPro.png"));
-        this.brandingProducts.add(new BrandingProduct(3, "./Assets/images/branding/Misencil.png"));
-        this.brandingProducts.add(new BrandingProduct(4, "./Assets/images/branding/PaulMitchell.png"));
-        
+        this.brandingProducts.add(new BrandingProduct(
+                0,
+                "./Assets/images/branding/Wella.png",
+                "https://www.wella.com/professional/fr-FR/home")
+        );
+        this.brandingProducts.add(new BrandingProduct(
+                1,
+                "./Assets/images/branding/FaroukChi.png",
+                "https://farouk.com/")
+        );
+        this.brandingProducts.add(new BrandingProduct(
+                2,
+                "./Assets/images/branding/LorealPro.png",
+                "https://www.lorealprofessionnel.ca/ca-fr")
+        );
+        this.brandingProducts.add(new BrandingProduct(
+                3,
+                "./Assets/images/branding/Misencil.png",
+                "https://misencil.com/ca/fr/")
+        );
+        this.brandingProducts.add(new BrandingProduct(
+                4,
+                "./Assets/images/branding/PaulMitchell.png",
+                "https://www.paulmitchell.com/")
+        );
+
         System.out.println("BrandingProducts has been created");
     }
-    
+
     public List<Testimonial> getTestimonials() {
         return testimonials;
     }

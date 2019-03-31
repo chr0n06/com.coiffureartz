@@ -12,10 +12,12 @@ package com.coiffureartz.model;
 public class BrandingProduct {
     private int ID;
     private String imagePath;
+    private String URI;
 
-    public BrandingProduct(int ID, String imagePath) {
+    public BrandingProduct(int ID, String imagePath, String URI) {
         this.ID = ID;
         this.imagePath = imagePath;
+        this.URI = URI;
     }
 
     public String getImagePath() {
@@ -33,5 +35,12 @@ public class BrandingProduct {
     public void setID(int ID) {
         this.ID = ID;
     }
-   
+
+    public String getURI() {
+        return URI;
+    }
+
+    public void setURI(String URI) {
+        this.URI = URI;
+    }    
 }
