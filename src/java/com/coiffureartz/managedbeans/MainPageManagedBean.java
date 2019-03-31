@@ -9,12 +9,11 @@ import com.coiffureartz.DAL.Repository;
 import com.coiffureartz.model.BusinessPhoneNumber;
 import com.coiffureartz.model.ServiceCard;
 import com.coiffureartz.model.Testimonial;
+import com.coiffureartz.settings.Preferences;
 import java.util.List;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
-import javax.swing.JEditorPane;
-import javax.swing.text.html.HTML;
-import org.apache.taglibs.standard.tag.el.xml.ParseTag;
+import javax.swing.text.html.HTMLDocument;
 
 /**
  *
@@ -44,25 +43,13 @@ public class MainPageManagedBean {
     }
 
     /**
-     * @deprecated ShowPhoneInfoManager() Allows to manage if we show the phone
-     * number of the business on website.
+     * ShowPhoneInfoManager() Allows to manage if we show the phone number of
+     * the business on website.
      *
-     * @param isNotConfidential
-     * @return String
+     * @return boolean
      */
-    public String showPhoneInfoManager(boolean isNotConfidential) {
-        String result = "";
-        if (isNotConfidential) {
-
-            result = "<li>"
-                    + "<a href=\"" + this.businessPhoneNumber.getPhoneNumberReference() + "\">"
-                    + this.businessPhoneNumber.getPhoneNumberSymbol() + "; "
-                    + this.businessPhoneNumber.getPhoneNumberText()
-                    + "</a>"
-                    + "</li>";
-
-        }
-        return result;
+    public boolean showPhoneInfoManager() {
+        return Preferences.IS_SHOWING_PHONE_ON_WEBSITE;
     }
 
 }
