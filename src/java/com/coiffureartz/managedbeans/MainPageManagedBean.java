@@ -27,6 +27,7 @@ public class MainPageManagedBean {
     BusinessPhoneNumber businessPhoneNumber = new BusinessPhoneNumber();
 
     Repository repository = Repository.getInstance();
+
     /**
      * Creates a new instance of MainPageManagedBean
      */
@@ -37,23 +38,29 @@ public class MainPageManagedBean {
     public List<ServiceCard> getAllServiceCards() {
         return repository.getServiceCard();
     }
-    
+
     public List<Testimonial> getAllTestimonials() {
         return repository.getTestimonials();
     }
 
+    /**
+     * @deprecated ShowPhoneInfoManager() Allows to manage if we show the phone
+     * number of the business on website.
+     *
+     * @param isNotConfidential
+     * @return String
+     */
     public String showPhoneInfoManager(boolean isNotConfidential) {
         String result = "";
-
         if (isNotConfidential) {
-            result = "<h1>Test</h1>";
-            /*result = "<li>"
+
+            result = "<li>"
                     + "<a href=\"" + this.businessPhoneNumber.getPhoneNumberReference() + "\">"
                     + this.businessPhoneNumber.getPhoneNumberSymbol() + "; "
                     + this.businessPhoneNumber.getPhoneNumberText()
                     + "</a>"
                     + "</li>";
-             */
+
         }
         return result;
     }
