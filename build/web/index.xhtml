@@ -186,28 +186,26 @@ and open the template in the editor.
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
         <script>
-                            /*window.onload() = onload();
-                             function onload() {
-                             var registerZone = document.getElementsByClassName("overlayBox")[0];
-                             registerZone.style.visibility = "hidden";
-                             }
-                             */
-                            function myFunction() {
-                                var content = document.getElementsByClassName("content")[0];
-                                var registerZone = document.getElementsByClassName("overlayBox")[0];
+            document.addEventListener("DOMContentLoaded", function () {
+                var registerZone = document.getElementsByClassName("overlayBox")[0];
+                registerZone.style.visibility = "hidden";
+            });
 
+            function myFunction() {
+                var content = document.getElementsByClassName("content")[0];
+                var registerZone = document.getElementsByClassName("overlayBox")[0];
 
-                                if (registerZone.style.visibility === "hidden") {
-                                    //alert("Dans if");
-                                    registerZone.style.visibility = "visible";
-                                    content.style.opacity = "0.1";
+                if (registerZone.style.visibility === "hidden") {
+                    //alert("Dans if");
+                    registerZone.style.visibility = "visible";
+                    content.style.opacity = "0.1";
 
-                                } else {
-                                    //alert("Dans else");
-                                    registerZone.style.visibility = "hidden";
-                                    content.style.opacity = "1";
-                                }
-                            }
+                } else {
+                    //alert("Dans else");
+                    registerZone.style.visibility = "hidden";
+                    content.style.opacity = "1";
+                }
+            }
         </script>
     </h:body>
 </html>
