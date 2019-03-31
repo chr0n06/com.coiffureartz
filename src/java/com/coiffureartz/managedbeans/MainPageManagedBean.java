@@ -44,7 +44,7 @@ public class MainPageManagedBean {
 
     /**
      * ShowPhoneInfoManager() Allows to manage if we show the phone number of
-     * the business on website.
+     * the business on the website.
      *
      * @return boolean
      */
@@ -52,4 +52,12 @@ public class MainPageManagedBean {
         return Preferences.IS_SHOWING_PHONE_ON_WEBSITE;
     }
 
+     /**
+     * businessOwnerEmail() Allows to change the email adress of the business owner on the website.
+     *
+     * @return String
+     */
+    public String businessOwnerEmail() {
+        return Preferences.EMAIL_OF_THE_BUSINESS_OWNER;
+    }
 }
