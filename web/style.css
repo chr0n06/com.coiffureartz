@@ -63,6 +63,45 @@ header .container a .bloc {
   border-radius: 10px;
   z-index: 100;
 }
+.overlayBox a {
+  position: relative;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition: color 1000ms;
+  transition: color 1000ms;
+  background-color: black;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+  color: white;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 15px 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.overlayBox a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2098d1;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition: 100ms ease-out;
+  transition: 100ms ease-out;
+}
+.overlayBox a:hover:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
 
 .fade {
   transition: background-color 1000ms;
@@ -158,19 +197,12 @@ header .container a .bloc {
   transform-origin: 100% 50%;
   -webkit-transition-property: transform;
   transition-property: transform;
-  -webkit-transition: 300ms ease-out;
-  transition: 300ms ease-out;
+  -webkit-transition: 100ms ease-out;
+  transition: 100ms ease-out;
 }
 .sweep-to-left:hover:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: 0;
 }
 
 main {

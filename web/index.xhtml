@@ -27,46 +27,57 @@ and open the template in the editor.
     <div class="overlayBox">
         <h2>Register zone</h2>
         <h:form>
-            <div class="row"> 
-                <div class="col-sm">
-                    <p:inputText placeholder="Prénom"></p:inputText>
-                    <p:inputText placeholder="Nom"></p:inputText>
-                </div>
-            </div>
-            <div class="row"> 
+            <div class="container-fluid">
+                <div class="row"> 
+                    <div class="col-sm">
+                        <p:inputText placeholder="Prénom"></p:inputText>
+                    </div>
+                    <div class="col-sm">
+                        <p:inputText placeholder="Nom"></p:inputText>
+                    </div>
 
-                <h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
-                    <p:selectOneRadio id="console" value="#{radioView.console}" >
-                        <div class="col-sm">
-                            <f:selectItem itemLabel="Homme" itemValue="Homme" />
-
-                            <f:selectItem itemLabel="Femme" itemValue="Femme" />
-                        </div>
-                    </p:selectOneRadio>
-                </h:panelGrid>
-            </div>
-            <div class="row"> 
-                <div class="col-sm">
-                    <p:inputText placeholder="Ville"></p:inputText>
-                    <p:inputText placeholder="Email"></p:inputText>
                 </div>
-            </div>
-            <div class="row"> 
-                <div class="col-sm">
-                    <p:password placeholder="Password" 
-                                required="true">
-
-                    </p:password>
-                    <p:password placeholder="Confirmer le Password" 
-                                required="true" 
-                                validatorMessage="Veuillez choisir un mot de passe avec au moins un des caractères suivants:!$%?*">
-                    </p:password>
+                <div class="row">              
+                        <p:selectOneRadio id="console" value="#{radioView.console}" >
+                            <div class="col-sm">
+                                <f:selectItem itemLabel="Homme" itemValue="Homme" />
+                            </div> 
+                            <div class="col-sm">
+                                <f:selectItem itemLabel="Femme" itemValue="Femme" />
+                            </div>
+                        </p:selectOneRadio>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm">
-                    <a href="#" onclick="myFunction()" class="sweep-to-left">Annuler</a>
-                    <a href="#" class="sweep-to-left">Confirmer</a>  
+                <div class="row"> 
+                    <div class="col-sm">
+                        <p:inputText placeholder="Ville"></p:inputText>
+                    </div>
+                    <div class="col-sm">
+
+                        <p:inputText placeholder="Email"></p:inputText>
+                    </div>
+                </div>
+                <div class="row"> 
+                    <div class="col-sm">
+                        <p:password placeholder="Password" 
+                                    required="true">
+
+                        </p:password>
+                    </div>
+                    <div class="col-sm">
+                        <p:password placeholder="Confirmer le Password" 
+                                    required="true" 
+                                    validatorMessage="Veuillez choisir un mot de passe avec au moins un des caractères suivants:!$%?*">
+                        </p:password>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <a href="#" onclick="myFunction()">Annuler</a>
+                    </div>
+                    <div class="col-sm">
+                        <a href="#">Confirmer</a> 
+                    </div>
+
                 </div>
             </div>
         </h:form>

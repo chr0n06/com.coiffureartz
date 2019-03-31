@@ -58,6 +58,19 @@ header{
 }
 
 .overlayBox{
+    a{
+        @include sweep-to-left;    
+        background-color: black;
+        box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+        color: white;
+        display: block;
+        font-weight: bold;
+        margin-bottom: 20px;
+        padding: 15px 0;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
     visibility: hidden;
     position: absolute;
     left: 50%;
@@ -120,71 +133,12 @@ header{
 }
 
 .radial-out{
-    overflow: hidden;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    position: relative;
-    -webkit-transition: color 300ms;
-    transition: color 300ms;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    &:before{
-        content: "";
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: #2980b9;
-        border-radius: 100%;
-        -webkit-transform: scale(0);
-        transform: scale(0);
-        -webkit-transition-property: transform;
-        transition-property: transform;
-        -webkit-transition: 300ms ease-out;
-        transition: 300ms ease-out;
-    }
-
-    &:hover:before{
-        -webkit-transform: scale(2);
-        transform: scale(2);
-    }
-
+    @include buttonRadialOut;
 }
 
 .sweep-to-left{
-    position: relative;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-transition: color 1000ms;
-    transition: color 1000ms;
-    &:before{
-        content: "";
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: #2098d1;
-        -webkit-transform: scaleX(0);
-        transform: scaleX(0);
-        -webkit-transform-origin: 100% 50%;
-        transform-origin: 100% 50%;
-        -webkit-transition-property: transform;
-        transition-property: transform;
-        -webkit-transition: 300ms ease-out;
-        transition: 300ms ease-out;
-    }
-    &:hover:before{
-        -webkit-transform: scaleX(1);
-        transform: scaleX(1);
-    }
+    @include sweep-to-left
 }
-
-* { box-sizing: border-box; margin: 0; padding: 0; border: 0; }
 
 main{
     @include main;
