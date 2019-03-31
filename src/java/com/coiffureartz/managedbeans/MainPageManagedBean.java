@@ -6,6 +6,7 @@
 package com.coiffureartz.managedbeans;
 
 import com.coiffureartz.DAL.Repository;
+import com.coiffureartz.model.BrandingProduct;
 import com.coiffureartz.model.BusinessPhoneNumber;
 import com.coiffureartz.model.ServiceCard;
 import com.coiffureartz.model.Testimonial;
@@ -40,6 +41,10 @@ public class MainPageManagedBean {
 
     public List<Testimonial> getAllTestimonials() {
         return repository.getTestimonials();
+    }
+    
+    public List<BrandingProduct> getAllBrandingProducts() {
+        return repository.getBrandingProducts();
     }
 
     /**

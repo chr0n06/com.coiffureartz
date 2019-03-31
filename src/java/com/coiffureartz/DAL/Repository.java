@@ -5,6 +5,7 @@
  */
 package com.coiffureartz.DAL;
 
+import com.coiffureartz.model.BrandingProduct;
 import com.coiffureartz.model.ServiceCard;
 import com.coiffureartz.model.Testimonial;
 import java.util.ArrayList;
@@ -20,13 +21,16 @@ public class Repository {
 
     private List<Testimonial> testimonials;
     private List<ServiceCard> serviceCard;
+    private List<BrandingProduct> brandingProducts;
 
     // private constructor restricted to this class itself 
     private Repository() {
         this.testimonials = new ArrayList<>();
         this.serviceCard = new ArrayList<>();
+        this.brandingProducts = new ArrayList<>();
         this.populateTestimonials();
         this.populateServiceCard();
+        this.populateBrandingProducts();
 
     }
 
@@ -70,6 +74,16 @@ public class Repository {
         System.out.println("ServiceCards has been created");
     }
 
+    private void populateBrandingProducts() {
+        this.brandingProducts.add(new BrandingProduct(0, "./Assets/images/branding/Wella.png"));
+        this.brandingProducts.add(new BrandingProduct(1, "./Assets/images/branding/FaroukChi.png"));
+        this.brandingProducts.add(new BrandingProduct(2, "./Assets/images/branding/LorealPro.png"));
+        this.brandingProducts.add(new BrandingProduct(3, "./Assets/images/branding/Misencil.png"));
+        this.brandingProducts.add(new BrandingProduct(4, "./Assets/images/branding/PaulMitchell.png"));
+        
+        System.out.println("BrandingProducts has been created");
+    }
+    
     public List<Testimonial> getTestimonials() {
         return testimonials;
     }
@@ -85,7 +99,13 @@ public class Repository {
     public void setServiceCard(List<ServiceCard> serviceCard) {
         this.serviceCard = serviceCard;
     }
-    
-    
+
+    public List<BrandingProduct> getBrandingProducts() {
+        return brandingProducts;
+    }
+
+    public void setBrandingProducts(List<BrandingProduct> brandingProducts) {
+        this.brandingProducts = brandingProducts;
+    }
 
 }

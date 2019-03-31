@@ -146,6 +146,43 @@ main{
 }
 
 
+.brandingSection{
+    background: #F6F6F6;
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 50px 0 10px 0;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    background-color :white;
+    .container{
+        ul{
+            list-style-type: none;
+            letter-spacing: 0.19px;
+            font-size: 14px;
+            .box-item{
+                display: inline-block;
+                width: 15%;
+                height :80px;
+                border: black;
+                border-style: solid;
+                border-size: 1em;
+                padding : 10px 10px 10px 10px;
+
+                li{  
+                    width:100%;
+                    position: center;
+                    
+                }
+            }       
+        }
+    }
+}
+
 #testimonial{
     @include main;
 
