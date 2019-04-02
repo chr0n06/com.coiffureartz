@@ -236,7 +236,6 @@ main {
   font-size: 14px;
 }
 .brandingSection .container ul .box-item {
-  display: inline-block;
   width: 15%;
   height: 80px;
   border: black;
@@ -247,6 +246,7 @@ main {
 .brandingSection .container ul .box-item li {
   width: 100%;
   position: center;
+  vertical-align: central;
 }
 
 #testimonial {

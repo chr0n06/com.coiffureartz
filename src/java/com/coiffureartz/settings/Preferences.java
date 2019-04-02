@@ -16,6 +16,7 @@ import javax.faces.bean.ViewScoped;
 public class Preferences {
     //Footer Options
     public static final boolean IS_SHOWING_PHONE_ON_WEBSITE = false;
+    public static final String NAME_OF_THE_BUSINESS_OWNER = "Cynthia Styliste";
     public static final String EMAIL_OF_THE_BUSINESS_OWNER = "cynthia.pronovost@gmail.com";
     
 }

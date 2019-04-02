@@ -165,7 +165,6 @@ main{
             letter-spacing: 0.19px;
             font-size: 14px;
             .box-item{
-                display: inline-block;
                 width: 15%;
                 height :80px;
                 border: black;
@@ -176,6 +175,7 @@ main{
                 li{  
                     width:100%;
                     position: center;
+                    vertical-align: central;
                     
                 }
             }       

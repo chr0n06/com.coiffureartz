@@ -57,6 +57,15 @@ public class MainPageManagedBean {
         return Preferences.IS_SHOWING_PHONE_ON_WEBSITE;
     }
 
+    /**
+     * businessOwnerName() Allows to change the name of the business owner on the website.
+     *
+     * @return String
+     */
+    public String businessOwnerName() {
+        return Preferences.NAME_OF_THE_BUSINESS_OWNER;
+    }
+    
      /**
      * businessOwnerEmail() Allows to change the email adress of the business owner on the website.
      *
