@@ -145,44 +145,6 @@ main{
     background-color: black;
 }
 
-
-.brandingSection{
-    background: #F6F6F6;
-    color: #000;
-    font-size: 14px;
-    font-weight: 300;
-    padding: 50px 0 10px 0;
-    text-align: center;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: auto;
-    display: inline-block;
-    background-color :white;
-    .container{
-        ul{
-            list-style-type: none;
-            letter-spacing: 0.19px;
-            font-size: 14px;
-            .box-item{
-                width: 15%;
-                height :80px;
-                border: black;
-                border-style: solid;
-                border-size: 1em;
-                padding : 10px 10px 10px 10px;
-
-                li{  
-                    width:100%;
-                    position: center;
-                    vertical-align: central;
-                    
-                }
-            }       
-        }
-    }
-}
-
 #testimonial{
     @include main;
 
@@ -203,8 +165,6 @@ main{
         }
     }
 }
-
-
 
 header {
     height: 50vh;
@@ -231,7 +191,16 @@ a {
     color: dodgerblue;
 }
 
-
+.card-deck{
+    margin-right: 10px;
+    margin-left: 10px;
+    .card{
+        padding: 15px 5px 0px 5px;
+        border: black;
+        border-style: solid;
+        border-width: 0.2em;
+      }
+}
 
 figure.snip1477 {
     font-family: 'Raleway', Arial, sans-serif;
