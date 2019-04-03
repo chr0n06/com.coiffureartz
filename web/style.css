@@ -250,6 +250,9 @@ header {
   background-position: center center;
   position: relative;
 }
+header .container p {
+  box-shadow: none;
+}
 
 section {
   min-height: 200vh;
@@ -267,11 +270,14 @@ a {
   color: dodgerblue;
 }
 
-.card-deck {
+.branding {
+  padding: 25px;
+}
+.branding .card-deck {
   margin-right: 10px;
   margin-left: 10px;
 }
-.card-deck .card {
+.branding .card-deck .card {
   padding: 15px 5px 0px 5px;
   border: black;
   border-style: solid;

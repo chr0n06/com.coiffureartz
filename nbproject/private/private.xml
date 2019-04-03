@@ -5,8 +5,13 @@
         <group>
             <file>file:/D:/com.coiffureartz/src/java/com/coiffureartz/managedbeans/MainPageManagedBean.java</file>
             <file>file:/D:/com.coiffureartz/src/java/com/coiffureartz/model/BusinessPhoneNumber.java</file>
+            <file>file:/D:/com.coiffureartz/src/java/com/coiffureartz/settings/Preferences.java</file>
             <file>file:/D:/com.coiffureartz/web/index.xhtml</file>
+            <file>file:/D:/com.coiffureartz/src/java/com/coiffureartz/model/Testimonial.java</file>
             <file>file:/D:/com.coiffureartz/web/style.scss</file>
+            <file>file:/D:/com.coiffureartz/web/mixins.css</file>
+            <file>file:/D:/com.coiffureartz/web/mixins.scss</file>
+            <file>file:/D:/com.coiffureartz/web/variables.scss</file>
         </group>
     </open-files>
 </project-private>

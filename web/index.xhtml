@@ -88,17 +88,30 @@ and open the template in the editor.
             <header>
                 <div class="container">
                     <img src="./Assets/images/CALogo1.png" alt="sample38" style="max-width: 60%; height:auto; margin-top: 100px;"/>
-                    <a href="#" onclick="myFunction()" class="radial-out">S'inscrire</a>
+                    <a href="#" onclick="openRegisterBox()" class="radial-out">S'inscrire</a>
+                    <a href="#" onclick="openLoginBox()" class="radial-out">Se connecter</a>
                     <!--<a href="#" class="sweep-to-left">Se connecter</a>      
                 <p:inputText placeholder="username"></p:inputText>
                     -->
                 </div>
             </header>
 
+
+            <!--CountDown Section-->
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <!-- Display the countdown timer in an element -->
+                    <h1 class="display-4">Time remaining before opening!</h1>
+                    <h3 id="demo"></h3>    
+                </div>
+            </div>
+
+
             <!--Service Card Section-->
             <main>
-                <div class="container">
+                <div class="card-deck">
                     <c:forEach var="x" items="#{MainPage.allServiceCards}">
+                        <div class="card">
                         <figure class="snip1477"><img src="#{x.imagePath}" alt="sample35" />
                             <div class="title">
                                 <div>
@@ -110,6 +123,7 @@ and open the template in the editor.
                                 <p>#{x.description}</p>
                             </figcaption>
                         </figure>
+                        </div>
                     </c:forEach>
                 </div>
             </main>
@@ -174,20 +188,17 @@ and open the template in the editor.
             </div>
 
 
-            <!--CountDown Section-->
-            <div class="container-fluid">
-                <!-- Display the countdown timer in an element -->
-                <h3>Time remaing before opening!</h3>
-                <p id="demo"></p>
-            </div>
+
 
             <!--Branding Section-->
-            <div class="card-deck">
-                <c:forEach var="x" items="#{MainPage.allBrandingProducts}">
-                    <div class="card">
-                        <a href="#{x.URI}"> <img class="card-img-top" src="#{x.imagePath}" alt="First slide"></img></a>                
-                    </div>
-                </c:forEach>
+            <div class="branding">
+                <div class="card-deck">
+                    <c:forEach var="x" items="#{MainPage.allBrandingProducts}">
+                        <div class="card">
+                            <a href="#{x.URI}"> <img class="card-img-top" src="#{x.imagePath}" alt="First slide"></img></a>                
+                        </div>
+                    </c:forEach>
+                </div>
             </div>
 
             <footer id="myFooter">
@@ -219,7 +230,7 @@ and open the template in the editor.
                 registerZone.style.visibility = "hidden";
             });
 
-            function myFunction() {
+            function openRegisterBox() {
                 var content = document.getElementsByClassName("content")[0];
                 var registerZone = document.getElementsByClassName("overlayBox")[0];
 
