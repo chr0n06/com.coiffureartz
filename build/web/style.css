@@ -278,6 +278,7 @@ a {
   margin-left: 10px;
 }
 .branding .card-deck .card {
+  cursor: pointer;
   padding: 15px 5px 0px 5px;
   border: black;
   border-style: solid;

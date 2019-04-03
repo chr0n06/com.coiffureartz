@@ -112,17 +112,17 @@ and open the template in the editor.
                 <div class="card-deck">
                     <c:forEach var="x" items="#{MainPage.allServiceCards}">
                         <div class="card">
-                        <figure class="snip1477"><img src="#{x.imagePath}" alt="sample35" />
-                            <div class="title">
-                                <div>
-                                    <h3>#{x.title}</h3>
-                                    <h4>#{x.subTitle}</h4>
+                            <figure class="snip1477"><img src="#{x.imagePath}" alt="sample35" />
+                                <div class="title">
+                                    <div>
+                                        <h3>#{x.title}</h3>
+                                        <h4>#{x.subTitle}</h4>
+                                    </div>
                                 </div>
-                            </div>
-                            <figcaption>
-                                <p>#{x.description}</p>
-                            </figcaption>
-                        </figure>
+                                <figcaption>
+                                    <p>#{x.description}</p>
+                                </figcaption>
+                            </figure>
                         </div>
                     </c:forEach>
                 </div>
@@ -194,9 +194,11 @@ and open the template in the editor.
             <div class="branding">
                 <div class="card-deck">
                     <c:forEach var="x" items="#{MainPage.allBrandingProducts}">
-                        <div class="card">
-                            <a href="#{x.URI}"> <img class="card-img-top" src="#{x.imagePath}" alt="First slide"></img></a>                
-                        </div>
+                        
+                        <div class="card" onclick="window.location ='#{x.URI};'">
+                                <img class="card-img-top" src="#{x.imagePath}" alt="First slide"></img>         
+                            </div>
+                        
                     </c:forEach>
                 </div>
             </div>
