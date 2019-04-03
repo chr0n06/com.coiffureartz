@@ -187,18 +187,13 @@ and open the template in the editor.
                 </a>
             </div>
 
-
-
-
             <!--Branding Section-->
             <div class="branding">
                 <div class="card-deck">
                     <c:forEach var="x" items="#{MainPage.allBrandingProducts}">
-                        
-                        <div class="card" onclick="window.location ='#{x.URI};'">
-                                <img class="card-img-top" src="#{x.imagePath}" alt="First slide"></img>         
-                            </div>
-                        
+                        <div class="card" onclick="window.location = '#{x.URI};'">
+                            <img class="card-img-top" src="#{x.imagePath}" alt="First slide"></img>         
+                        </div>
                     </c:forEach>
                 </div>
             </div>
@@ -223,8 +218,6 @@ and open the template in the editor.
             </footer>
 
         </div>
-
-
 
         <script>
             document.addEventListener("DOMContentLoaded", function () {
