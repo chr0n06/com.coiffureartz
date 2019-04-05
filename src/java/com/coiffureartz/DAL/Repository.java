@@ -78,7 +78,7 @@ public class Repository {
         this.brandingProducts.add(new BrandingProduct(
                 0,
                 "./Assets/images/branding/Wella.png",
-                "https://www.wella.com/professional/fr-FR/home")
+                "https://www.wella.com/")
         );
         this.brandingProducts.add(new BrandingProduct(
                 1,
@@ -88,7 +88,7 @@ public class Repository {
         this.brandingProducts.add(new BrandingProduct(
                 2,
                 "./Assets/images/branding/LorealPro.png",
-                "https://www.lorealprofessionnel.ca/ca-fr")
+                "https://www.lorealprofessionnel.ca/ca-fr/")
         );
         this.brandingProducts.add(new BrandingProduct(
                 3,

@@ -140,9 +140,16 @@ header{
     @include sweep-to-left
 }
 
-main{
+.servicecard{
     @include main;
     background-color: black;
+    .card-deck{
+        margin-right: 0px;
+        margin-left : 0px;
+        .card{
+            background-color: black;
+        }
+    }
 }
 
 #testimonial{
@@ -216,9 +223,7 @@ figure.snip1477 {
     font-family: 'Raleway', Arial, sans-serif;
     position: relative;
     overflow: hidden;
-    margin: 10px;
-    min-width: 230px;
-    max-width: 315px;
+    width: 90%;
     color: #ffffff;
     text-align: center;
     font-size: 16px;

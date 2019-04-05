@@ -72,7 +72,7 @@ and open the template in the editor.
                 </div>
                 <div class="row">
                     <div class="col-sm">
-                        <a href="#" onclick="myFunction()">Annuler</a>
+                        <a href="#" onclick="openRegisterBox()">Annuler</a>
                     </div>
                     <div class="col-sm">
                         <a href="#">Confirmer</a> 
@@ -108,7 +108,7 @@ and open the template in the editor.
 
 
             <!--Service Card Section-->
-            <main>
+            <div class="servicecard">
                 <div class="card-deck">
                     <c:forEach var="x" items="#{MainPage.allServiceCards}">
                         <div class="card">
@@ -126,7 +126,8 @@ and open the template in the editor.
                         </div>
                     </c:forEach>
                 </div>
-            </main>
+            </div>
+
 
             <!--Testimonial Section-->
             <div id="testimonial">
