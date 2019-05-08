@@ -42,10 +42,10 @@ public class Repository {
     }
 
     private void populateTestimonials() {
-        this.testimonials.add(new Testimonial(0, "\" Cynthia est incroyable, elle fait les meilleurs mèches en ville \"", "-A. Maillot-"));
-        this.testimonials.add(new Testimonial(1, "\" Le plus beau salon de coiffure résidentiel pour femme à des kilomètres à la ronde \"", "-M.Laniel-"));
-        this.testimonials.add(new Testimonial(2, "\" On en ressort toujours plus beau! \"", "-S. Philips-"));
-        this.testimonials.add(new Testimonial(3, "\" Mille merci pour mes cils! Trop sur la coche ! \"", "-M. Shanna-"));
+        //this.testimonials.add(new Testimonial(1, "\" Cynthia est incroyable, elle fait les meilleurs mèches en ville \"", "-A. Maillot-"));
+        this.testimonials.add(new Testimonial(0, "\" Le plus beau salon de coiffure résidentiel pour femme à des kilomètres à la ronde \"", "-M.Laniel-"));
+        //this.testimonials.add(new Testimonial(2, "\" On en ressort toujours plus beau! \"", "-S. Philips-"));
+        //this.testimonials.add(new Testimonial(3, "\" Mille merci pour mes cils! Trop sur la coche ! \"", "-M. Shanna-"));
         System.out.println("Testimonials has been created");
     }
 
@@ -54,7 +54,7 @@ public class Repository {
                 0,
                 "Coiffure",
                 "Mèches/Teinture",
-                "The only skills I have the patience to learn are those that have no real application in life.",
+                "Vaste choix de colorations",
                 "./Assets/images/coiffure.jpg")
         );
         this.serviceCard.add(new ServiceCard(
