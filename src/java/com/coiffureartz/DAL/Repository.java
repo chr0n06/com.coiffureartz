@@ -53,24 +53,32 @@ public class Repository {
         this.serviceCard.add(new ServiceCard(
                 0,
                 "Coiffure",
-                "Mèches/Teinture",
-                "Vaste choix de colorations",
-                "./Assets/images/coiffure.jpg")
+                "Coupes & Rallonges",
+                "Revamper votre look avec une simple coupe stylisée ou avec une pose de rallonge à bille ou à clip",
+                "./Assets/images/wall3.jpg")
         );
         this.serviceCard.add(new ServiceCard(
                 1,
+                "Coloration",
+                "Mèches/Teinture",
+                "Vaste choix de couleurs et de produits",
+                "./Assets/images/coiffure.jpg")
+        );
+        this.serviceCard.add(new ServiceCard(
+                2,
                 "Pose de cils",
                 "Microblading",
                 "Pour un regard qui ne laissera personne indifférent !",
                 "./Assets/images/ServiceCard_Microblading.jpg")
         );
         this.serviceCard.add(new ServiceCard(
-                2,
+                3,
                 "Soins dentaire",
                 "Blanchiement",
                 "Offrez vous un sourire éclatant et souriez à la vie !",
-                "./Assets/images/coiffure.jpg")
+                "./Assets/images/Blanchiment_Dentaire.jpg")
         );
+        
         System.out.println("ServiceCards has been created");
     }
 
