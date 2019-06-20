@@ -70,14 +70,14 @@ public class Repository {
                 "Microblading",
                 "Pour un regard qui ne laissera personne indifférent !",
                 "./Assets/images/ServiceCard_Microblading.jpg")
-        );
+        );/*
         this.serviceCard.add(new ServiceCard(
                 3,
                 "Soins dentaire",
                 "Blanchiement",
                 "Offrez vous un sourire éclatant et souriez à la vie !",
                 "./Assets/images/Blanchiment_Dentaire.jpg")
-        );
+        );*/
         
         System.out.println("ServiceCards has been created");
     }
